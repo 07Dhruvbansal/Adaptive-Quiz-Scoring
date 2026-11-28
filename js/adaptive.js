@@ -15,7 +15,7 @@
  * preferring the target difficulty band, then neighbouring bands if needed.
  */
 (function (global) {
-  const LEARNING_RATE = 0.45;
+  
   const MIN_ABILITY = -3;
   const MAX_ABILITY = 3;
   const BANDS = {
