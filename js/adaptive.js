@@ -53,10 +53,6 @@
     return clamp(next, MIN_ABILITY, MAX_ABILITY);
   }
 
-  /**
-   * Pick the unused question whose difficulty parameter is closest to ability.
-   * If the preferred difficulty band is empty, fall back to neighbours, then any unused item.
-   */
   function selectNextQuestion(bank, usedIds, ability) {
     const unused = bank.filter((q) => !usedIds.has(q.id));
     if (unused.length === 0) {
