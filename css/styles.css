@@ -1,19 +1,4 @@
-:root {
-  color-scheme: light;
-  --ink: #202a40;
-  --muted: #778198;
-  --paper: #f5f7fb;
-  --panel: #fff;
-  --line: #e9edf4;
-  --accent: #635bdb;
-  --accent-dark: #5148c7;
-  --navy: #272553;
-  --teal: #3e9c91;
-  --good: #188767;
-  --bad: #d65c64;
-  --amber: #df9e3d;
-  --shadow: 0 12px 34px rgba(36, 47, 79, 0.055);
-}
+
 
 * {
   box-sizing: border-box;
