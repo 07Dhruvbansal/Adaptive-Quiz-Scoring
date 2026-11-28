@@ -1,19 +1,3 @@
-/**
- * Adaptive engine: simplified 1PL (Rasch / item-response) ability estimate.
- *
- * Ability θ starts at the learner's chosen difficulty and is clamped to [-3, 3].
- * For an item with difficulty b, the probability of a correct response is:
- *   P(θ, b) = 1 / (1 + e^(-(θ - b)))
- *
- * After each answer the estimate is updated:
- *   θ ← θ + η * (actual - P)
- * where actual is 1 for correct and 0 for incorrect.
- * Correct answers therefore raise θ (more when the item was hard for the learner).
- * Incorrect answers lower θ (more when the item should have been easy).
- *
- * Next-item selection chooses an unused question whose b is closest to θ,
- * preferring the target difficulty band, then neighbouring bands if needed.
- */
 (function (global) {
   const LEARNING_RATE = 0.45;
   const MIN_ABILITY = -3;
